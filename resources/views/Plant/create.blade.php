@@ -14,8 +14,8 @@
             @csrf
             <div class="form-group mb-6">
               <input type="text" class="form-control block
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="nom" id="nom"
-                placeholder="Nom">
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="name" id="name"
+                placeholder="name">
             </div>
             <div class="grid grid-cols-2 gap-4">
               <div class="form-group mb-8">
@@ -31,7 +31,7 @@
                       <option value="Patate">Patate</option>
                   </select>
               </div>
-              <div class="form-group mb-4">
+              <div >
                 <input type="number" class="form-control
                   focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="periodicite" id="periodicite"
                   aria-label="Periodicité" placeholder="Periodicité">

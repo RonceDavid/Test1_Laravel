@@ -45,7 +45,7 @@ class FarmerController extends Controller
     {
         // dd($request->all());
         $request->validate([
-            'nom' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
             'age' => ['required', 'string', 'max:255'],
             'sexe' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255'],
@@ -91,7 +91,7 @@ class FarmerController extends Controller
     public function update(Request $request, Farmer $farmer)
     {
         $request->validate([
-            'nom' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
         ]);
 
         $farmer->update($request->all());

@@ -13,75 +13,75 @@
             @csrf
             <div class="form-group mb-6">
               <input type="text" class="form-control block
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="localisation_champ" id="localisation_champ"
-                placeholder="Localisation Champ">
+                focus:text-gray-700 focus:bg-white  focus:outline-none" name="localisation_champ" id="localisation_champ"
+                placeholder="localisation ">
             </div>
             <div class="grid grid-cols-2 gap-4">
               <div class="form-group mb-6">
                 <input type="text" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="pays" id="pays"
+                  focus:text-gray-700 focus:bg-white  focus:outline-none" name="pays" id="pays"
                   aria-label="Pays" placeholder="Pays">
               </div>
               <div class="form-group mb-6">
                 <input type="text" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="region" id="region"
+                  focus:text-gray-700 focus:bg-white  focus:outline-none" name="region" id="region"
                   aria-label="Région" placeholder="Région">
               </div>
             </div>
             <div class="grid grid-cols-2 gap-4">
               <div class="form-group mb-6">
-                <label for="superficie" class="form-label inline-block mb-2 text-gray-700">Superficie (m²)</label>
+                <label for="superficie"  "mb-2 text-gray-700">Superficie (m²)</label>
                 <input type="number" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="superficie" id="superficie"
-                  aria-label="Superficie (m²)" placeholder="Superficie (m²)">
+                  focus:text-gray-700 focus:bg-white  focus:outline-none" name="superficie" id="superficie"
+                  aria-label="Superficie (m²)" placeholder=" ">
               </div>
-              <div class="form-group mb-8">
-                <label for="plant_id" class="form-label inline-block mb-2 text-gray-700">Plant</label>
+              <div>
+                <label for="plant_id"  "mb-2 text-gray-700">Plant</label>
                 <select class="form-select appearance-none
-                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    focus:text-gray-700 focus:bg-white  focus:outline-none"
                     required
                     name="plant_id" id="plant_id"
                     aria-label="Plant">
                       <option value="" class="text-gray-700">Selectionner</option>
                       @foreach ($plant as $p)
-                        <option value={{ $p->id }}>{{ $p->nom }}</option>
+                        <option value={{ $p->id }}>{{ $p->name }}</option>
                       @endforeach
                   </select>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="form-group mb-6">
-                <label for="date_prise_contact" class="form-label inline-block mb-2 text-gray-700">Prise De Contact</label>
+            <div>
+              <div>
+                <label for="date_prise_contact"  "mb-2 text-gray-700">Prise De Contact</label>
                 <input type="date" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="date_prise_contact" id="date_prise_contact"
+                  focus:text-gray-700 focus:bg-white  focus:outline-none" name="date_prise_contact" id="date_prise_contact"
                   aria-label="Prise De Contact" placeholder="Prise De Contact">
               </div>
-              <div class="form-group mb-8">
-                <label for="farmer_id" class="form-label inline-block mb-2 text-gray-700">Farmer</label>
+              <div>
+                <label for="farmer_id"  "mb-2 text-gray-700">Farmer</label>
                 <select class="form-select appearance-none
-                    focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+                    focus:text-gray-700 focus:bg-white  focus:outline-none"
                     required
                     name="farmer_id" id="farmer_id"
                     aria-label="farmer">
                       <option value="" class="text-gray-700">Select</option>
                       @foreach ($farmer as $a)
-                        <option value={{ $a->id }}>{{ $a->nom }}</option>
+                        <option value={{ $a->id }}>{{ $a->name }}</option>
                       @endforeach
                   </select>
               </div>
             </div>
-            <div class="grid grid-cols-2 gap-4">
-              <div class="form-group mb-6">
-                <label for="date_semis" class="form-label inline-block mb-2 text-gray-700">Date Semis</label>
+            <div >
+              <div >
+                <label for="date_semis"  "mb-2 text-gray-700">Date Semis</label>
                 <input type="date" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="date_semis" id="date_semis"
-                  aria-label="Date Semis" placeholder="Date Semis">
+                  focus:text-gray-700 focus:bg-white focus:outline-none" name="date_semis" id="date_semis"
+                  aria-label="Date Semis" placeholder=" ">
               </div>
-              <div class="form-group mb-8">
-                <label for="date_anticipe_recolte" class="form-label inline-block mb-2 text-gray-700">Date  Recolte</label>
+              <div>
+                <label for="date_anticipe_recolte"  "mb-2 text-gray-700">Date  Recolte</label>
                 <input type="date" class="form-control
-                  focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="date_anticipe_recolte" id="date_anticipe_recolte"
-                  aria-label="Date  Recolte" placeholder="Date  Recolte">
+                  focus:text-gray-700 focus:bg-white  focus:outline-none" name="date_anticipe_recolte" id="date_anticipe_recolte"
+                  aria-label="Date  Recolte" placeholder=" ">
               </div>
             </div>
         </div>

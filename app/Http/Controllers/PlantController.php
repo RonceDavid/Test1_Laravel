@@ -43,9 +43,9 @@ class PlantController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request->all());
+    //   dd($request->all());
         $request->validate([
-            'nom' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
         ]);
 
         $plant = Plant::create($request->all());
@@ -86,7 +86,7 @@ class PlantController extends Controller
     public function update(Request $request, Plant $plant)
     {
         $request->validate([
-            'nom' => ['required', 'string', 'max:255'],
+            'name' => ['required', 'string', 'max:255'],
         ]);
 
         $plant->update($request->all());

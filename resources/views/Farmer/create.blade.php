@@ -13,8 +13,8 @@
             @csrf
             <div class="form-group mb-6">
               <input type="text" class="form-control block
-                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="nom" id="nom"
-                placeholder="Nom">
+                focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" name="name" id="name"
+                placeholder="name">
             </div>
             <div class="form-group mb-6">
               <input type="email" class="form-control block
@@ -29,8 +29,8 @@
                     name="sexe" id="sexe"
                     aria-label="Sexe">
                       <option value="">Sexe</option>
-                      <option value="Homme">Homme</option>
-                      <option value="Femme">Femme</option>
+                      <option value="Homme">Masculin</option>
+                      <option value="Femme">Feminin</option>
                   </select>
               </div>
               <div class="form-group mb-4">

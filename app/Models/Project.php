@@ -9,7 +9,7 @@ class Project extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'id', 'bibiography','email','name','age','hold-agrix','phone','whatsApp','sex','source','created_at','updated_at',
+        'Plant','Farmers','Superficie','Pays','Région','Date Semis','Date Recolte','Prise Contact','Localisation',
            
     ];
 }
