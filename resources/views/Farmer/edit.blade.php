@@ -1,4 +1,4 @@
-    @extends('farmer.layout')
+    @extends('Farmer.layout')
 
     @section('content')
         <div class="row">
@@ -7,7 +7,7 @@
                     <h2> Edit product</h2>
                 </div>
                 <div class="pull-right">
-                    <a class="btn btn-primary" href="{{ route('farmer.index') }}">Back</a>
+                    <a class="btn btn-primary" href="{{ route('Farmer.index') }}">Back</a>
                 </div>
             </div>
         </div>
@@ -24,7 +24,7 @@
         </div>
     @endif 
 
-    <form action= "{{ route('farmer.update',$farmer->id) }}" method="POST">
+    <form action= "{{ route('Farmer.update',$farmer->id) }}" method="POST">
         @csrf
         
         @method('PUT')

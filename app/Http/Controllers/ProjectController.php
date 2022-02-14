@@ -27,7 +27,7 @@ class ProjectController extends Controller
         $farmer = Farmer::all();
         $plant = Plant::all();
         
-        return view('project.index', compact('project', 'farmer', 'plant'));
+        return view('Project.index', compact('project', 'farmer', 'plant'));
     }
 
     /**
@@ -37,7 +37,7 @@ class ProjectController extends Controller
      */
     public function create()
     {
-        return view('project.create');
+        return view('Project.create');
     }
 
     /**
@@ -59,7 +59,7 @@ class ProjectController extends Controller
 
         $project = Project::create($request->all());
 
-        return redirect()->route('project.index')
+        return redirect()->route('Project.index')
             ->with('success', 'New Project');
     }
 
@@ -71,7 +71,7 @@ class ProjectController extends Controller
      */
     public function show(Project $project)
     {
-        return view('project.show', compact('project'));
+        return view('Project.show', compact('project'));
     }
 
     /**
@@ -82,7 +82,7 @@ class ProjectController extends Controller
      */
     public function edit(Project $project)
     {
-        return view('project.edit', compact('project'));
+        return view('Project.edit', compact('project'));
     }
 
     /**
@@ -101,7 +101,7 @@ class ProjectController extends Controller
 
         $project->update($request->all());
 
-        return redirect()->route('project.index')
+        return redirect()->route('Project.index')
             ->with('success', 'Project updated');
     }
 
@@ -115,7 +115,7 @@ class ProjectController extends Controller
     {
         $project->delete();
 
-        return redirect()->route('project.index')
+        return redirect()->route('Project.index')
             ->with('success', 'Project deleted !');
     }
 }

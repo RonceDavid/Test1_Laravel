@@ -22,7 +22,7 @@ class FarmerController extends Controller
     public function index()
     {
         $farmer = Farmer::latest()->get();
-        return view('farmer.index', compact('farmer'));
+        return view('Farmer.index', compact('farmer'));
     }
 
     /**
@@ -32,7 +32,7 @@ class FarmerController extends Controller
      */
     public function create()
     {
-        return view('farmer.create');
+        return view('Farmer.create');
     }
 
     /**
@@ -55,7 +55,7 @@ class FarmerController extends Controller
 
         $farmer = Farmer::create($request->all());
 
-        return redirect()->route('farmer.index')
+        return redirect()->route('Farmer.index')
             ->with('success', 'New farmer');
     }
 
@@ -67,7 +67,7 @@ class FarmerController extends Controller
      */
     public function show(Farmer $farmer)
     {
-        return view('farmer.show', compact('farmer'));
+        return view('Farmer.show', compact('farmer'));
     }
 
     /**
@@ -78,7 +78,7 @@ class FarmerController extends Controller
      */
     public function edit(Farmer $farmer)
     {
-        return view('farmer.edit', compact('farmer'));
+        return view('Farmer.edit', compact('farmer'));
     }
 
     /**
@@ -96,7 +96,7 @@ class FarmerController extends Controller
 
         $farmer->update($request->all());
 
-        return redirect()->route('farmer.index')
+        return redirect()->route('Farmer.index')
             ->with('success', 'farmer updated');
     }
 
@@ -110,7 +110,7 @@ class FarmerController extends Controller
     {
         $farmer->delete();
 
-        return redirect()->route('farmer.index')
+        return redirect()->route('Farmer.index')
             ->with('success', 'farmer deleted !');
     }
 }
