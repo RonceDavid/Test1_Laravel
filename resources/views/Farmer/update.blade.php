@@ -170,15 +170,6 @@
                 placeholder="Biographie"
               ></textarea>
             </div>
-            {{-- <div class="flex justify-center">
-              <div class="form-group form-check mb-6">
-                <input type="checkbox"
-                  class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
-                  id="u_possede_agrix" name="possede_agrix" value="true">
-                <label class="form-check-label inline-block text-gray-800" for="possede_agrix">Possède Agrix</label>
-              </div>
-            </div> --}}
-
         </form>
         <div
           class="modal-footer flex flex-shrink-0 flex-wrap items-center justify-end p-4 border-t border-gray-200 rounded-b-md">
