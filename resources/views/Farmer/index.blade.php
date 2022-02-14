@@ -65,7 +65,7 @@
                 
               </td>
               <td class="text-center">
-                <form class="inline-block" method="POST" action="{{ route('farmer.destroy', $farmer->id) }}" >
+                <form class="inline-block" method="POST" action="{{ route('Farmer.destroy', $farmer->id) }}" >
                   @csrf @method('DELETE')
                   <button type="submit">
                    
