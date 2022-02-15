@@ -63,13 +63,13 @@
   <!-- Left links -->
   <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
     <li class="nav-item p-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('Plant.index') }}">Plants</a>
+      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('plant.index') }}">Plants</a>
     </li>
     <li class="nav-item p-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('Farmer.index') }}">Farmers</a>
+      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('farmer.index') }}">Farmers</a>
     </li>
     <li class="nav-item p-2">
-      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('Project.index') }}">Projects</a>
+      <a class="nav-link text-gray-500 hover:text-gray-700 focus:text-gray-700 p-0" href="{{ route('project.index') }}">Projects</a>
     </li>
   </ul>
   <!-- Left links -->

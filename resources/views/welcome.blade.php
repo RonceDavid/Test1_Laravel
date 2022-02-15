@@ -22,6 +22,6 @@
     </head>
     <body >
             <h2 class="text-center"> Agrix-tech </h2>
-            <a href="{{ route('Farmer.index')}}"><h3 class="text-center"> Cliquer sur ce lien</h3></a>
+            <a href="{{ route('farmer.index')}}"><h3 class="text-center"> Cliquer sur ce lien</h3></a>
     </body>
 </html>

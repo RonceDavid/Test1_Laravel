@@ -22,7 +22,7 @@ class PlantController extends Controller
     public function index()
     {
         $plant = Plant::latest()->get();
-        return view('Plant.index', compact('plant'));
+        return view('plant.index', compact('plant'));
     }
 
     /**
@@ -32,7 +32,7 @@ class PlantController extends Controller
      */
     public function create()
     {
-        return view('Plant.create');
+        return view('plant.create');
     }
 
     /**
@@ -50,7 +50,7 @@ class PlantController extends Controller
 
         $plant = Plant::create($request->all());
 
-        return redirect()->route('Plant.index')
+        return redirect()->route('plant.index')
             ->with('success', 'New plant');
     }
 
@@ -62,7 +62,7 @@ class PlantController extends Controller
      */
     public function show(Plant $plant)
     {
-        return view('Plant.show', compact('plant'));
+        return view('plant.show', compact('plant'));
     }
 
     /**
@@ -73,7 +73,7 @@ class PlantController extends Controller
      */
     public function edit(Plant $plant)
     {
-        return view('Plant.edit', compact('plant'));
+        return view('plant.edit', compact('plant'));
     }
 
     /**
@@ -91,7 +91,7 @@ class PlantController extends Controller
 
         $plant->update($request->all());
 
-        return redirect()->route('Plant.index')
+        return redirect()->route('plant.index')
             ->with('success', 'Plant updated');
     }
 
@@ -105,7 +105,7 @@ class PlantController extends Controller
     {
         $plant->delete();
 
-        return redirect()->route('Plant.index')
+        return redirect()->route('plant.index')
             ->with('success', 'Plant deleted!');
     }
 }
