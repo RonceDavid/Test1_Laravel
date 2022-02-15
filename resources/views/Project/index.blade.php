@@ -72,7 +72,7 @@
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">{{ $project->date_prise_contact }}</td>
               <td class="text-sm text-gray-900 font-light px-6 py-4 whitespace-nowrap">{{ $project->localisation_champ }}</td>
               <td class="text-center">
-                <form class="inline-block" method="POST" action="{{ route('project.destroy', $project->id) }}" >
+                <form class="inline-block" method="POST" action="{{ route('Project.destroy', $project->id) }}" >
                   @csrf @method('DELETE')
                   <button type="submit">
                     DELETE
@@ -93,10 +93,10 @@
   </div>
 </main>
 
-@include('project.create')
-@include('project.update')
+@include('Project.create')
+@include('Project.update')
 
-@include('plant.update')
-@include('farmer.update')
+@include('Plant.update')
+@include('Farmer.update')
 
 @endsection

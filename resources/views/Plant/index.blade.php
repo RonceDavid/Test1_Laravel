@@ -74,7 +74,7 @@
                     {{ $plant->periodicite }} Jours
                 </td>
                 <td class="text-center">
-                    <form class="inline-block" method="POST" action="{{ route('plant.destroy', $plant->id) }}" >
+                    <form class="inline-block" method="POST" action="{{ route('Plant.destroy', $plant->id) }}" >
                     @csrf @method('DELETE')
                     <button type="submit"> 
                     
@@ -95,7 +95,7 @@
     </div>
     </main>
 
-    @include('plant.create')
-    @include('plant.update')
+    @include('Plant.create')
+    @include('Plant.update')
 
     @endsection

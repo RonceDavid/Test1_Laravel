@@ -86,7 +86,7 @@
   </div>
 </main>
 
-@include('farmer.create')
+@include('Farmer.create')
 @include('farmer.update')
 
 @endsection
